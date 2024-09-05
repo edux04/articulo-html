@@ -1,0 +1,145 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Georgia", "Times New Roman", Times, serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.logo {
+  font-size: 24px;
+  font-family: "Georgia", serif;
+  font-weight: bold;
+  color: #333;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-family: "Arial", sans-serif;
+  color: #333;
+  font-size: 14px;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+main {
+  flex: 1;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+article {
+  margin-bottom: 30px;
+}
+
+article h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "Georgia", serif;
+  color: #333;
+}
+
+article img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+article p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #e3e3e3;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  article h1 {
+    font-size: 28px;
+  }
+
+  article p {
+    font-size: 16px;
+  }
+}
